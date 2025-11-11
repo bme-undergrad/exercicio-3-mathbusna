@@ -7,9 +7,12 @@ function [mu] = exercicio3(t, NC)
 
 % digite seu codigo aqui
 
+t_new=t-t(1);
+yi=log(NC)
+a=polyfit(t_new, yi, 1);
 
 % mantenha essas duas linhas finais, subtituindo mu pelo valor que você calculou
-mu = 0;
+mu = a(1);
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
